@@ -28,10 +28,8 @@ class CarController extends Controller
         $car->price = $request->price;
         $car->description = $request->description;
         $car->save();
-        return redirect()->back()->with([
-            'message' => 'Car added successfully',
-            'car' => $car
-        ]);
+
+        return redirect("/car/" . $car->id);
     }
 
     public function show($id)

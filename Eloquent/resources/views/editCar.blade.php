@@ -37,14 +37,14 @@
                 <input type="text" name="description" value="{{ $car->description }}" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
             </div>
 
-            <button type="submit" class="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-200">
+            <button type="submit" class="w-full bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition duration-200">
                 Update
             </button>
+            <a href="{{ route('add-car') }}" class="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-200 block text-center mt-4">
+                Add New Car
+            </a>
         </form>
-        // button to add a new car
-        <a href="{{ route('add-car') }}" class="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-200 block text-center mt-4">
-            Add New Car
-        </a>
+
 
     </div>
 

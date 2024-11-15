@@ -8,7 +8,7 @@ Route::get('/', function () {
 });
 
 
-Route::get('/add-car', [CarController::class, 'index']);
+Route::get('/add-car', [CarController::class, 'index'])->name('add-car');
 
 Route::post('/car', [CarController::class, 'store'])->name('store');
 
